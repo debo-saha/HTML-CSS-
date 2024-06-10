@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: green ;
+        }
+        .yellow{
+            color: yellow !important;
+        }
+        .cpurple{
+            color: purple;
+        }
+        .cred{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue;" class="yellow cred cpurple">CSS Specifity And Cascade</h1>
+
+    <!-- if there are same type of selectors so priority will be given to the last one
+
+    .yellow{
+        color: yellow;
+    }
+    .cpurple{
+        color: purple;
+    }
+    .cred{
+        color: red;
+    }
+
+    here all selectors are same .so the priorityis given to red as he is last. -->
+
+
+
+
+    <!-- inline style has higher priority than any thing 
+
+    <h1 style="color: blue;" class="yellow cred cpurple">CSS Specifity And Cascade</h1>
+
+    as here inline style is present so the style is besically the style is present here -->
+
+
+
+    <!-- use of important
+    if we use important every thing will be changed for important
+
+    .yellow{
+        color: yellow !important;
+    }
+    .cpurple{
+        color: purple;
+    }
+    .cred{
+        color: red;
+    }
+
+    we thought this will be red but as we use important so it is showing yellow -->
+
+
+
+
+    <!-- priority orders of selectors
+
+    Important > Inline style > Id Selector > Class Selector / Atribute Selectors >  Element Selector > Universal Selector -->
+
+
+
+    <!-- Specifity Calculation -->/
+
+    <!-- 1)  Universal Selector - 0 pt
+    2)  Element Selector/ pseudo selector - 1 pt
+    3)  Class Selector / Atribute Selectors / psuedo classes- 10 pt
+    4)  Id Selector - 100 pt
+    5)  Inline Selector - 1000 pt
+    6)  Important - 10000 pt -->
+
+
+
+</body>
+</html>

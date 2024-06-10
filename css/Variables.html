@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        /* global root */
+        /* you can use this in any where in your html code */
+        /* veriable can be used for colour, padding, margin etc */
+        :root{
+            --color: #a13cff;
+            --seccolour: rgb(155, 155, 232);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav{
+            background-color:var(--color);
+        }
+        ul {
+            display: flex;
+        }
+        ul li {
+            list-style: none;
+            padding: 34px;
+        }
+        ul :first-child{
+            /* you can use local veriable with the same name */
+            --color: #3cff06;
+            background-color:var(--color);
+        }
+        .para{
+            background-color: var(--seccolour);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="nav">
+            <ul>
+                <li>About</li>
+                <li>home</li>
+                <li>descriptionn</li>
+            </ul>
+        </div>
+        <div class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum odit alias aliquam quod ullam placeat dolorem quisquam minima! Placeat repellendus harum doloribus, iure perferendis dicta. Voluptatem sequi sed ratione odio modi quia, ipsam reiciendis velit ullam facilis, harum veritatis? Unde, illum dolor? Neque fugiat velit, pariatur accusamus voluptate nesciunt doloremque officiis quidem dicta totam praesentium minus!
+
+        </div>
+    </div>
+</body>
+</html>

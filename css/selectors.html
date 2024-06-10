@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        div {
+            background-color: burlywood;
+        }
+        .new{
+            background-color: aqua;
+        }
+        #ID{
+            background-color: rgb(112, 233, 87);
+        }
+        div > p{
+            background-color: rgb(184, 138, 228);
+        }
+        main p{
+            background-color: darkgray;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a:visited{
+            color: rgb(161, 232, 48);
+        }
+        a:link{
+            color: rgb(97, 31, 38);
+        }
+        a:active{
+            background-color: aqua;
+        }
+        a:hover{
+            background-color: fuchsia;
+        }
+        [data-x=a]{
+            background-color: rgb(60, 167, 128);
+        }
+    </style>
+</head>
+<body>
+    Element Selector
+
+    <!-- div {
+        background-color: burlywood;
+    } -->
+
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae fugit nobis beatae, alias sint adipisci.</div>
+
+    <!-- class selector -->
+
+    <!-- .new{
+        background-color: aqua;
+    } -->
+    <article class="new">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere unde est possimus, modi illum dolor earum ad nisi aut corrupti!</article>
+
+    <!-- ID Selector -->
+
+    <!-- #ID{
+        background-color: rgb(112, 233, 87);
+    } -->
+    
+    <p id="ID">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat eaque cum eius soluta itaque saepe facilis unde odio.</p>
+
+    <!-- child selector -->
+
+    <!-- div > p{
+        background-color: rgb(184, 138, 228);
+    } -->
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam,<p>facere officia vel ex corrupti adipisci animi cumque consequatur pariatur.</p>Lorem ipsum dolor sit amet.</div>
+
+    <!-- Descendant Selectors -->
+  
+    <!-- main p{
+        background-color: darkgray;
+    } -->
+
+    <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae <p>vero dolor itaque ad voluptas, facilis autem ratione iste repellendus.</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vel.</main>
+
+    <!-- Universal Selector -->
+    <!-- *{
+        margin: 0;
+        padding: 0;
+    } -->
+
+
+    <!-- Pseudo Selector -->
+
+
+    <!-- a:visited{
+        color: rgb(161, 232, 48);
+    }
+    a:link{
+        color: rgb(97, 31, 38);
+    }
+    a:active{
+        background-color: aqua;
+    }
+    a:hover{
+        background-color: fuchsia;
+    } -->
+
+    <a href="https://www.google.co.in/">Go To Google</a>
+    <a href="https://www.facebook.co.in/">Go To Facebook</a>
+
+
+    <!-- Atribute Selector -->
+
+    <p data-x="a">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam veritatis necessitatibus ullam iure!</p>
+    
+</body>
+</html>

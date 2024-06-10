@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    hi my name is debojyoti 
+   
+    <!-- heading tags -->
+    <h1 style="background-color: aqua;">Heading 1</h1>   
+    <h2 style="background-color: hotpink; color: white;">Heading 2</h2>
+    <h3 style="background-color: goldenrod;">Heading 3</h3>
+    <h4 style="background-color: peru;">Heading 4</h4>
+    <h5 style="background-color: darkorange;">Heading 5</h5>
+    <h6 style="background-color: rgb(66, 73, 21);">Heading 6</h6>
+
+    <!-- paragraph tag -->
+
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    <!-- anchor tag (create link with another page) -->
+
+    <a href="https://www.google.com">Google</a>
+
+    
+    <!-- some use of anchor tag -->
+
+    <a href="http://in.youtube.com/">YouTube</a>
+    <br/>
+    <!-- mail -->
+    <a href="mailto:sahadebojyoti955@gmail.com">Mail Me</a>
+    <!-- phone -->
+    <a href="tel:9641574395">Call Us</a>
+    <br/>
+
+    <!-- image tag -->
+
+    <img height="200" width="300" src="coding immages.jpg" alt="ms dhoni">
+    <img height="200" width="300" src ="2023 world cup.webp" alt="2023 world cup">
+
+   <!-- table tag -->
+   
+   <!-- table>thead>th+tbody>tr*3+tfoot>tr*1 -->
+
+   <table border="1">
+    <thead>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Department</th>
+        <tbody>
+           <tr>
+            <td>sam</td>
+            <td>19</td>
+            <td>ece</td>
+           </tr>
+           <tr>
+            <td>ram</td>
+            <td>20</td>
+            <td>cse</td>
+           </tr>
+           <tr>
+            <td>raja</td>
+            <td>23</td>
+            <td>cse</td>
+           </tr>
+            <tfoot>
+                <tr>
+                    <td>final</td>
+                    <td>20</td>
+                    <td>hh</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </thead>
+   </table>
+
+
+    <!-- Expand Row or Collum of Tables -->
+    <!-- by using rowspan and colspan -->
+    
+    <table border="1">
+        <tr>
+            <td>Sl No</td>
+            <td>Name</td>
+            <td>Roll No</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Debojyoti</td>
+            <td rowspan="2">5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Manish</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="2">king</td>
+        </tr>
+    </table>
+
+ <!-- list tags -->
+
+    <!-- unordered lists -->
+    <!-- ul>li*5 -->
+    <ul type ="circle">
+        <li>maggi</li>
+        <li>lays</li>
+        <li>kurkura</li>
+        <li>uncle cips</li>
+        <li>biskuts</li>
+    </ul>
+    <!-- ordered lists -->
+    <!-- ol>li*5 -->
+    <ol type="i">
+        <li>maggi</li>
+        <li>lays</li>
+        <li>kurkure</li>
+        <li>uncle cips</li>
+        <li>biskuts</li>
+    </ol>   
+
+
+    <!-- forms tags -->
+
+    <!-- for text type inputs -->
+    <label for="email">Email id : <input type="text" id="email" placeholder="example@gmail.com"></label>
+    <br/>
+    <label for="password">Password :<input type="password" id="password" placeholder="Password"></label>
+    <br/>
+    <input type="submit" value="Sign In">
+    <!-- Also can use -->
+    <button>Sign in</button>
+    <br>
+    <!-- for date type inputs -->
+    <input type="date" name="date" id="date">
+    <br>
+
+
+    <!-- immages -->
+    <label for="102">immage</label>
+    <input type="image" name="file" id="102" alt="Arrow" src="https://th.bing.com/th/id/OIP.T3zDCEOBNL5wd_Ql65wDbwHaEK?pid=ImgDet&rs=1" width="300px">
+    <br/>
+    <!-- Radio type -->
+
+    <label for="102">Select</label>
+        <input type="radio" value="class ix" name="Class" id="102">class ix
+        <input type="radio" value="class x" name="Class" id="102">class x
+        <input type="radio" value="class xi" name="Class" id="102">class xi
+    <br/>  
+
+    <!-- checkbox type -->
+
+    <label for="103">Select</label>
+        <input type="checkbox" value="Java" name="language" id="103">Java
+        <input type="checkbox" value="Python" name="language" id="103">Python
+        <input type="checkbox" value="C++" name="language" id="103">C++
+        <input type="checkbox" value="C" name="language" id="103">C
+    <br>
+    <!-- select form tag -->
+    <label for="111">Select any one</label>
+    <select name="fruits" id="111">
+        <option value="apple">Apple</option>
+        <option value="orranges">Orrange</option>
+        <option value="mango">Mango</option>
+    </select>
+
+    <br>
+
+    <!-- fileselector type -->
+    <label for="102">select file</label>
+    <input type="file" name="file" id="102">
+    <br/>
+
+
+    <!-- text area -->
+
+    <label for="textarea">Feedback :</label>
+    <textarea name="textarea1" id="textarea" cols="30" rows="10"></textarea>
+
+     <!-- block and inline element -->
+
+    <!-- block element
+    the tag which occupy full line fron  lest to right and preform next line in other line thats called block element. Example-div,heading,paragraph
+
+    inline element
+    the tag which occupy only the place which is provided and perform next line just after that is called inline element.example-span tag -->
+
+    <div style="background-color: rgb(32, 211, 211);">This is my first div</div>
+    <div style="background-color: aqua;">This is my first div</div>
+
+    <span style="background-color: yellowgreen;">This is my first span</span>
+    <span style="background-color: yellowgreen;">This is my first span</span>
+
+    <br>
+    
+    <!-- video -->
+    ,poster(tmbnail) -->
+    
+    <video  src="lic.mp4" width="400"height="300" controls></video>
+
+    <!-- audio tag -->
+    controls - autoplay,loop,mute
+    <audio src="" controls></audio>
+    <br/>
+   
+    <!-- iframe  -->
+    <iframe src="forms1.html" width="600" height="600" ></iframe>
+
+    <iframe src="https://www.youtube.com/embed/_TpOHMCODXo" frameborder="0"></iframe>
+    </html>
+
+    <!-- Customised Paragraph Tags -->
+
+    <pre> 
+        My Name Is Debojyoti Saha.
+        I Live In West Bengal.
+    </pre>
+
+        
+    <!-- Use of entitle and special symbols like < , >  -->
+
+
+    <!-- "<" is replaced by &lt; and ">" is replaced by &gt; -->
+    <!-- to create spaces we use &nbsp; -->
+<pre>
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>

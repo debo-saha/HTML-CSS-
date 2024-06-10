@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        .box{
+            border: 2px solid white;
+           
+        }
+        .boxes{
+            border: 2px solid whitesmoke;
+            background-color: green;
+            height: 344px;
+            width: 344px;
+            padding: 3px;
+            margin: 3px;
+        }
+        .box{
+                display: flex;
+            }
+        /* @media not/only mediatype and (expressions) {
+            CSS Code;
+        } */
+        @media only screen and (max-width:455px){
+            body{
+                background-color: blue;
+                
+            }
+            .box{
+                flex-wrap: wrap;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div>i am a box</div>
+    <div class="box">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </div>
+</body>
+</html>

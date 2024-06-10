@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 40vh;
+            width: 80vw;
+            background-color: blueviolet;
+        }
+        .box{
+            height: 4vh;
+            width: 8vw;
+            background-color: rgb(217, 226, 43);
+            /* write the name of the properties you want to transition */
+            transition-property: transform ;
+            transition-duration: 3s;
+            /* change after doing inspect */
+            transition-timing-function: ease-in-out ;
+            transition-delay: 1s;
+
+            /* instead of doing these 4 you can use this in only one */
+            transition: transform 3s cubic-bezier(0.02, 1.47, 0.27,-0.08) 1s;
+        }
+        .translate{
+            transform:translateX(10vw) translateY(10vh);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>

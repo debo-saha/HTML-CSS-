@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      :root {
+        --colour: rgb(146, 146, 212);
+        --bgcolour: rgb(153, 154, 153);
+        --brcolour: rgb(247, 245, 245);
+        --ptextcolour: rgb(17, 97, 17);
+        --stextcolour: rgb(92, 8, 8);
+        --pbgcolour: rgb(227, 155, 155);
+        --nav1: rgb(133, 255, 160);
+        --nav2: rgb(225, 230, 75);
+        --nav3: rgb(245, 89, 206);
+        --nav4: rgb(108, 117, 244);
+      }
+      body {
+        background-color: var(--bgcolour);
+      }
+      div ul {
+        list-style: none;
+        display: flex;
+        margin: 40px;
+      }
+      div ul li {
+        padding: 55px 55px 50px 55px;
+        border: 2px solid var(--brcolour);
+      }
+      div ul :first-child{
+        background-color: var(--nav1);
+      }
+      div ul :nth-last-child(3){
+        background-color:var(--nav2);
+      }
+      div ul :nth-last-child(2){
+        background-color:var(--nav3);
+      }
+      div ul :nth-last-child(1){
+        background-color:var(--nav4);
+      }
+      .para {
+        border: 2px solid var(--brcolour);
+        padding: 20px;
+        margin: 40px;
+      }
+      div h2 {
+        border: 2px solid var(--brcolour);
+        text-align: center;
+        color: var(--ptextcolour);
+        background: var(--pbgcolour);
+      }
+      div p {
+        color: var(--stextcolour);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <nav>
+        <ul class="as">
+          <li class="a">Home</li>
+          <li class="a">About</li>
+          <li class="a">More Info</li>
+          <li class="a">Contact Me</li>
+        </ul>
+      </nav>
+      <div class="para">
+        <h2>Bhupendra Jogi</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa quia
+          natus, qui possimus error eius facilis nesciunt iste commodi a dolorum
+          tenetur. Consequuntur, delectus veniam molestias aliquam dolore
+          possimus pariatur numquam impedit eos tempora nulla omnis similique
+          dolorem perferendis praesentium adipisci est fugit unde architecto?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

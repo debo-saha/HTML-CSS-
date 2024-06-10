@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit and Object-cover</title>
+    <style>
+        .container{
+            height: 588px;
+            width: 666px;
+            /* background-color: gainsboro; */
+            background-image: url(https://th.bing.com/th/id/R.7383028831604862ec47fefee3e8f43f?rik=JvqjDCfPocchLg&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2fimages-of-nature-4.jpg&ehk=%2b1REJDS0cEPD0z2IP%2fddCyP9IgFz6xVpp8fyQr78SJ0%3d&risl=&pid=ImgRaw&r=0);
+            border: 2px solid black;
+        }
+        img{
+            height: 188px;
+            width: 266px;
+            /* this will full cover the img in the given area */
+            object-fit: cover;
+            /* if you want to give the exact position you can use this */
+            /* object-position: top right; */
+            object-position: 20px 10px;
+
+            /* this cover full img with same aspect-ratio but it left blank spaces */
+            /* object-fit: contain; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://th.bing.com/th/id/R.7383028831604862ec47fefee3e8f43f?rik=JvqjDCfPocchLg&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2fimages-of-nature-4.jpg&ehk=%2b1REJDS0cEPD0z2IP%2fddCyP9IgFz6xVpp8fyQr78SJ0%3d&risl=&pid=ImgRaw&r=0" alt=""> -->
+    </div>
+</body>
+</html>

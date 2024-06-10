@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines </title>
+    <style>
+        .box{
+            border: 2px solid blueviolet;
+            padding: 40px;
+            box-shadow:  5px 5px 10px gray;
+            /* use inset to use the shadow inside */
+        }
+        .text_shadow{
+            text-shadow: 2px 2px 5px green;
+            border: 2px solid blue;
+            outline: 3px solid brown;
+            /* it is use to expand how much you want */
+            outline-offset: 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">i am a good coder</div>
+    <p class="text_shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi saepe in fuga ipsum hic similique ea, magni praesentium exercitationem!</p>
+</body>
+</html>

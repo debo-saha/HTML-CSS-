@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property</title>
+    <style>
+        .box{
+            width: 20vw;
+            height: 10vh;
+            border: 2px solid blue;
+            /* to avoid overflow we can use overflow : scroll; */
+            /* overflow: scroll; */
+            /* overflow: auto;
+            white-space: nowrap;
+            text-overflow: ellipsis; */
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae tempore odit cumque, et, est labore suscipit neque nam at, deserunt vel alias repellat accusamus commodi! Incidunt cumque pariatur, assumenda quaerat eaque cum delectus corporis odit at neque repellat nisi? A quasi sequi vero at voluptates quis error ducimus temporibus nisi. Lorem ipsum dolor sit amet consectetur.
+    </div>
+</body>
+</html>

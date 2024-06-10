@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Property</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .box {
+        width: 80vw;
+        height: 533px;
+        border: 2px solid blueviolet;
+        margin: 8px;
+        padding: 3px;
+      }
+      .box1 {
+        background-color: yellow;
+        /* position: relative; */
+        /* page mein kahin bhi ho, scroll krne pr neeche nhi jaygi, stick hojaygi */
+        /* position: sticky;
+        top: 0px;
+        width: 100vw;
+        height: 144px;
+        padding: 0;
+        margin: 0; */
+      }
+      .box2 {
+        background-color: aquamarine;
+        /* left: 34px;
+        top: 34px;*/
+        /* it is used to take any box upper side */
+        /* z-index: 1;  */
+      }
+      .box3 {
+        background-color: peru;
+        /* position: absolute;
+        top: 0;
+        left: 0; */
+      }
+      .box4 {
+        background-color: rebeccapurple;
+        /* position: relative; */
+        /* page mein position fixed hojaygi */
+        /* position: fixed;
+        top: 20px;
+        left: 70px; */
+      }
+      .box5{
+        background-color: #911313;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+      }
+      .parent {
+        padding: 34px;
+        border: 2px solid black;
+        margin: 43px;
+        /* apne parent ke relative position change hogi */
+        /* position: absolute; */
+        /* Exception: transform,filteror or perspective properties can also make an element appear by parent; */
+        /* transform: translate(0);
+        filter: invert(0); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box5"></div>
+    </div>
+  </body>
+</html>

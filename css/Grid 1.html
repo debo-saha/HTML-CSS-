@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+           border: 2px solid red;
+           display: grid;
+           
+           /* you can give name to the lines */
+
+           /* way to separate the grid row and column */
+           /* way1 */
+           /* grid-template-columns: [pehela] 100px [dusra] 120px; */
+           grid-template-rows: 100px 100px 120px;
+
+           /* way2 */
+           /* 1 fr =1 fraction .. it is calculated by given fraction/total fraction.. no of fr you add is no of column or rows.. */
+           /* grid-template-columns: 1fr 1fr 1fr; */
+           /* to use the same we can use "repeat" property. */
+           grid-template-columns: repeat(3,1fr);
+        }
+        .item{
+           border: 2px solid black;
+           height: 55px;
+           /* width: 55px; */
+        }
+        /* To change the position of any item in the grid use the row where you want to start and where to finish by giving a "/" start/end */
+        .item-4{
+            grid-row: 1/2;
+            grid-column: 1/2;
+
+
+            /* or you can use this */
+
+
+            /* grid-column: pehela/dusra;
+            grid-row: 1/2; */
+        }
+        /* if you want to over take any item just put the same */
+        /* .item-1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+</body>
+</html>

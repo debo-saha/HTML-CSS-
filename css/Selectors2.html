@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* .box :first-child{
+            background-color: aqua;
+        }
+        .box ::first-line{
+            background-color: yellow;
+        }
+        .boxes *{
+            background-color: green;
+        } */
+        /* .boxes :nth-child(odd){
+            background-color: blue;
+        } */
+        /* .boxes :nth-last-child(2){
+            background-color: green;
+        } */
+        .boxes ::after{
+            content: "Harry Bhi ki course";
+            color: blue;
+        }
+        .boxes ::before{
+            content: "i am debojyoti saha";
+        }
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+        .boxes ::first-letter{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div>lorem 25</div>
+        <div>lorem 25</div>
+        <div>lorem 25</div>
+        <div>lorem 25</div>
+    </div>
+</body>
+</html>

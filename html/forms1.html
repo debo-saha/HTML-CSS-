@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Form 1 -->
+
+    <form>
+        <h1>Event Registration</h1>
+        <label for="name">Name </label>  
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <label for="email">Email Id </label>
+        <input type="email" name="email" id="email">
+        <br>
+        <br>
+        <label for="phone">Phone No</label>
+        <input type="tel" name="phone" id="phone">
+        <br>
+        <br>
+        <label for="occupation">Occupation :</label>
+            <select name="occupation" id="occupation">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Topics Of Interest</legend>
+            <label for="checkbox1">HTML</label>
+            <input type="checkbox" name="checkbox1" id="checkbox1">
+            <label for="checkbox2">CSS</label>
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+            <label for="checkbox3">Javascript</label>
+            <input type="checkbox" name="checkbox3" id="checkbox3">
+        </fieldset>
+        <label for="textarea">Comments</label>
+        <br>
+        <textarea name="textarea" id="textarea" cols="50" rows="10"></textarea>
+        <button>Register</button>
+       </form>
+       <br/>
+
+       <!-- Form 2 -->
+
+       <form>
+        <h1>Job Application</h1>
+        <label for="name">Name </label>  
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <label for="email">Email Id </label>
+        <input type="email" name="email" id="email">
+        <br>
+        <br>
+        <label for="phone">Phone No</label>
+        <input type="tel" name="phone" id="phone">
+        <br>
+        <br>
+        <label for="resume">Resume </label>
+        <br>
+        <input type="file" name="resume" id="resume">
+        <br>
+        <br>
+        <label for="experiences">Experiences(Years)</label>
+        <br>
+        <input type="number" name="experiences" id="experiences" min="0" max="50">
+        <fieldset>
+            <legend>Skills:</legend>
+            <label for="checkbox1">HTML</label>
+            <input type="checkbox" name="checkbox1" id="checkbox1">
+            <br>
+            <label for="checkbox2">CSS</label>
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+            <br>
+            <label for="checkbox3">Javascript</label>
+            <input type="checkbox" name="checkbox3" id="checkbox3">
+        </fieldset>
+        <br>
+        <label for="highereducation">Higher Education :</label>
+            <select name="highereducation" id="highereducation">
+                <option value="Higher School">Higher Education</option>
+                <option value="B Tech">B Tech</option>
+                <option value="M Tech">M Tech</option>
+                <option value="PhD">PhD</option>
+            </select>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Availability</legend>
+            <label for="radio1">Full-time</label>
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio2">Part-time</label>
+            <input type="radio" name="radio" id="radio2">
+        </fieldset>
+        <label for="textarea">Additional Comment</label>
+        <br>
+       <textarea name="textarea" id="textarea" cols="50" rows="5"></textarea>
+       <button>Submit Application</button>
+       </form>
+       <br/>
+
+       <!-- Form 3 -->
+
+       <form>
+        <h1>Complex Form</h1>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name </label>  
+            <input type="text" name="name" id="name">
+            <label for="email">Email Id </label>
+            <input type="email" name="email" id="email">
+            <label for="phone">Phone No</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="dateofbirth">Date Of Birth</label>
+            <input type="date" name="date" id="dateofbirth">
+            <span>Gender</span>
+            <label for="gender1">Male</label>
+            <input type="radio" name="gender" id="gender1">
+            <label for="gender2">Female</label>
+            <input type="radio" name="gender" id="gender2">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="select">Select</option>
+                <option value="india">India</option>
+                <option value="UAE">UAE</option>
+                <option value="USA">USA</option>
+                <option value="Australia">Australia</option>
+                <option value="others">Others</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <label for="address">Address Street</label>
+                    <input type="text" id="address">
+                <label for="city">City</label>
+                    <input type="text" id="city">
+                <label for="state">State</label>
+                    <input type="text" id="state">
+                <label for="Zip">Zip Code</label>
+                    <input type="number" id="Zip">
+            </legend>
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>    
+            <label for="Comment">Comments</label>
+            <textarea name="Comments" id="Comments" cols="50" rows="5"></textarea>
+        <label for="agreement">I Agree All Terms And Conditions</label>
+        <input type="checkbox" name="agreement" id="agreement">
+        </fieldset>
+        <input type="button" value="Submit">
+       </form>
+       <br/>
+
+    <!-- Form 4 -->
+
+    <h1>Form+Table</h1>
+    <table border="3">
+        <tr>
+            <td> <label for="name">Name </label> </td>
+            <td> <input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td> <label for="address">Address</label></td>
+            <td> <textarea name="address" id="address" cols="50" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td> <label for="password">Password</label></td>
+            <td> <input type="password" name="password" id="password"></td>
+        </tr>
+        <tr>
+            <td> <label for="experiences">Job Experiences(Years)</label></td>
+            <td> <input type="number" name="experiences" id="experiences" min="0" max="50"></td>
+        </tr>
+        <tr>
+            <td> <label for="dateofbirth">Date Of Birth</label></td>
+            <td> <input type="date" name="date" id="dateofbirth"></td>
+        </tr>
+        <tr>
+            <td> <label for="email">Email Id</label></td>
+            <td> <input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td> <label for="scarch">Scarch</label></td>
+            <td> <input type="search" name="scarch" id="scarch"></td>
+        </tr>
+        <tr>
+            <td> <label for="month">Month</label></td>
+            <td> <input type="month" name="month" id="month"></td>
+        </tr>
+        <tr>
+            <td> <label for="week">Week</label></td>
+            <td> <input type="week" name="week" id="week"></td>
+        </tr>
+        <tr>
+            <td> <label for="time">Time</label></td>
+            <td> <input type="time" name="time" id="time"></td>
+        </tr>
+        <tr>
+            <td> <label for="tel">Tel No</label></td>
+            <td> <input type="tel" name="tel" id="tel"></td>
+        </tr>
+        <tr>
+            <td> <label for="url">URL</label></td>
+            <td> <input type="url" name="url" id="url"></td>
+        </tr>
+        <tr>
+            <td> <label for="colour">Colour</label></td>
+            <td> <input type="color" name="colour" id="colour"></td>
+        </tr>
+        <tr>
+            <td> <label for="range">Range</label></td>
+            <td> <input type="range" name="range" id="range"></td>
+        </tr>
+        <tr>
+            <td> <label for="file">File</label></td>
+            <td> <input type="file" name="file" id="file"></td>
+        </tr>
+        <tr>
+            <td> <span>Qualification</span></td>
+            <td> 
+                <label for="10th">10th</label>
+                <input type="checkbox" name="10th" id="10th">
+                <label for="12th">12th</label>
+                <input type="checkbox" name="12th" id="12th">
+                <label for="graduatation">Graduation</label>
+                <input type="checkbox" name="graduatation" id="graduatation">
+            </td>
+        </tr>
+        <tr>
+            <td> <span>Catagory</span></td>
+            <td>
+                <label for="General"></label>General  
+                <input type="radio" name="catagory" id="General">
+                <label for="SC"></label>SC
+                <input type="radio" name="catagory" id="SC">
+                <label for="OBC"></label>OBC
+                <input type="radio" name="catagory" id="OBC">
+                <label for="ST"></label>ST
+                <input type="radio" name="catagory" id="ST">
+            </td>
+        </tr>
+    </table>
+    <button>Submit</button>
+</body>
+</html>
